@@ -1,0 +1,10 @@
+G91                                        ; relative positioning 
+G1 E-5 F300                                ; retract a little 
+G1 Z+10 E-5 ; X-20 Y-20 F{travel_xy_speed} ; lift print head 
+G28 X0 Y0                                  ; homing 
+G1 Y180 F2000                              ; reset feedrate 
+M84                                        ; disable stepper motors 
+G90                                        ; absolute positioning 
+M300 S880 P200                             ; Make Print Completed Tones 
+M300 S880 P250                             ; beep 
+M300 S880 P300                             ; beep
